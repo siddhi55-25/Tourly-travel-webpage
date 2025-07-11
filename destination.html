@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Select Destination - Tourly</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #000428, #004e92);
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.85);
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 60px auto;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 40px;
+      border-radius: 10px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 500;
+    }
+
+    select, input[type="checkbox"] {
+      margin-top: 10px;
+    }
+
+    .checkbox-group {
+      margin-top: 10px;
+    }
+
+    .checkbox-group label {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .checkbox-group input {
+      margin-right: 10px;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      margin-top: 30px;
+      padding: 12px;
+      background: #1e90ff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #0b74d9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      background: rgba(0, 0, 0, 0.8);
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">✈ TOURLY</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="destination-select.html">DESTINATION</a></li>
+        <li><a href="packages.html">PACKAGES</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Select Your Destination</h1>
+    
+    <form action="submit.html" method="POST">
+      <label for="main-destination">Choose a main destination:</label>
+      <select id="main-destination" name="main_destination" required>
+        <option value="">-- Select a destination --</option>
+        <option value="paris">Paris, France</option>
+        <option value="tokyo">Tokyo, Japan</option>
+        <option value="newyork">New York, USA</option>
+        <option value="rome">Rome, Italy</option>
+        <option value="sydney">Sydney, Australia</option>
+        <option value="dubai">Dubai, UAE</option>
+      </select>
+
+      <label>Optional places you’d like to visit:</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="optional_destinations[]" value="bali"> Bali, Indonesia</label>
+        <label><input type="checkbox" name="optional_destinations[]" value="london"> London, UK</label>
+        <label><input type="checkbox" name="optional_destinations[]" value="cape_town"> Cape Town, South Africa</label>
+        <label><input type="checkbox" name="optional_destinations[]" value="barcelona"> Barcelona, Spain</label>
+      </div>
+
+      <button type="submit" formaction="submit.html">Submit Selection</button></a>
+    </form>
+  </div>
+
+  <footer>
+    © 2025 Tourly. All rights reserved.
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery - Tourly</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0f2027;
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.85);
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      background: rgba(0, 0, 0, 0.85);
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">✈ TOURLY</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="destination-select.html">DESTINATION</a></li>
+        <li><a href="packages.html">PACKAGES</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Tourism Gallery</h1>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Eiffel Tower, Paris">
+      <img src="https://images.unsplash.com/photo-1504457046785-444d6d2a0ae0" alt="Rome, Italy">
+      <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1" alt="New York City">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Sydney, Australia">
+      <img src="https://images.unsplash.com/photo-1518684079-6f5bcbd4f580" alt="Dubai Desert">
+      <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad" alt="Tokyo, Japan">
+      <img src="https://images.unsplash.com/photo-1494475673543-6e52d22cdf04" alt="London Bridge">
+      <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438" alt="Bali, Indonesia">
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Tourly. All rights reserved.
+  </footer>
+
+</body>
+</html>

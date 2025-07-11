@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Give your information - Tourly</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0f2027;
+      color: white;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.85);
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 60px auto;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      font-size: 14px;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #ccc;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      background: #1e90ff;
+      color: white;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #0b74d9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      background: rgba(0, 0, 0, 0.85);
+      margin-top: 60px;
+    }
+}
+
+.phone-form {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
+  width: 100%;
+}
+
+.phone-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.phone-form select,
+.phone-form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.phone-form button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.phone-form button:hover {
+  background-color: #45a049;
+}
+
+     :root { --bg: #0e1e26; --panel: #122f3a; --text: #fff; --accent: #2196f3; }
+    body{margin:0;font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);}
+    .container{max-width:540px;margin:4rem auto;padding:2rem;background:var(--panel);border-radius:8px;box-shadow:0 8px 16px rgba(0,0,0,.5);}
+    h2{margin-top:0;text-align:center;font-weight:600;}
+    label{display:block;margin:.75rem 0 .25rem;font-size:.9rem;}
+    input,select{width:100%;padding:.65rem .75rem;border:none;border-radius:4px;background:#1e3d49;color:#fff;font-size:.9rem;}
+    input:focus,select:focus{outline:2px solid var(--accent);}
+    .row{display:flex;gap:1rem;}
+    .row .col{flex:1;}
+    button{width:100%;margin-top:1.5rem;padding:.75rem;font-size:1rem;font-weight:600;border:none;border-radius:4px;background:var(--accent);color:#fff;cursor:pointer;transition:opacity .2s;}
+    button:hover{opacity:.85;}
+    small{font-size:.75rem;opacity:.75;}
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">✈ TOURLY</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="destination-select.html">DESTINATION</a></li>
+        <li><a href="packages.html">PACKAGES</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Submit Your information</h1>
+    <form action="submit-contact.html" method="POST">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+       <div class="phone-form">
+      <label for="country-code">Country:</label>
+      <select id="country-code" name="country-code">
+      <option value="+1">🇺🇸 USA (+1)</option>
+      <option value="+44">🇬🇧 UK (+44)</option>
+      <option value="+91" selected>🇮🇳 India (+91)</option>
+      <option value="+61">🇦🇺 Australia (+61)</option>
+      <option value="+81">🇯🇵 Japan (+81)</option>
+      <option value="+49">🇩🇪 Germany (+49)</option>
+      <!-- Add more countries as needed -->
+    </select>
+    <label for="phone-number">Phone Number:</label>
+    <input type="tel" id="phone-number" name="phone-number" placeholder="Enter phone number" required>
+    <label for="message">Your Message about destination</label>
+      <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+      <!-- ─── BASIC STYLES (feel free to replace with Tailwind/Bootstrap/etc.) ─── -->
+      <!-- ─── PAYMENT CARD ─── -->
+     <section class="container">
+     <h2>Payment Details</h2>
+    <form id="payment-form" action="process_payment.php" method="POST">
+      <!-- Choose a payment method -->
+      <label for="payment-method">Payment Method</label>
+      <select id="payment-method" name="payment_method" required>
+        <option value="" disabled selected>Select a method</option>
+        <option value="card">Credit / Debit Card</option>
+        <option value="paypal">PayPal</option>
+        <option value="upi">UPI</option>
+      </select>
+
+      <!-- Card‑only fields (hide with JS when another method is chosen) -->
+      <div id="card-fields">
+        <label for="card-name">Cardholder Name</label>
+        <input type="text" id="card-name" name="cardholder" placeholder="Name on card" autocomplete="cc-name"/>
+
+        <label for="card-number">Card Number</label>
+        <input type="text" id="card-number" name="cardnumber" placeholder="1234 5678 9012 3456" inputmode="numeric" pattern="\d{13,19}" autocomplete="cc-number"/>
+
+        <div class="row">
+          <div class="col">
+            <label for="expiry">Expiry (MM/YY)</label>
+            <input type="text" id="expiry" name="exp" placeholder="08/29" pattern="(0[1-9]|1[0-2])\/\d{2}" autocomplete="cc-exp"/>
+          </div>
+          <div class="col">
+            <label for="cvc">CVV</label>
+            <input type="password" id="cvc" name="cvv" placeholder="123" pattern="\d{3,4}" autocomplete="cc-csc"/>
+          </div>
+        </div>
+      </div>
+
+      <!-- Amount -->
+      <label for="amount">Amount (USD)</label>
+      <input type="number" id="amount" name="amount" min="1" step=".01" required />
+
+      <button type="submit" formaction="pay now.html">Pay Now</button>
+      <small>Your card will be processed securely over HTTPS.</small>
+      </section>
+    <!-- ─── OPTIONAL: TINY SCRIPT TO TOGGLE CARD FIELDS ─── -->
+     <script>
+    const methodSel = document.getElementById('payment-method');
+    const cardFields = document.getElementById('card-fields');
+    const toggleCardFields = () => {
+      cardFields.style.display = methodSel.value === 'card' || !methodSel.value ? 'block' : 'none';
+    };
+    methodSel.addEventListener('change', toggleCardFields);
+    toggleCardFields(); // initial call
+  </script>
+   <button type="submit" formaction="send message.html">Submit</button>
+    </form>
+  </div>
+
+  <footer>
+    © 2025 Tourly. All rights reserved.
+  </footer>
+
+</body>
+</html>

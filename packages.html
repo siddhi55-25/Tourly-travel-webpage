@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Packages - Tourly</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0f2027;  /* deep blue background */
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.85);
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 36px;
+    }
+
+    .packages {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: #111;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .card-content p {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .price {
+      font-weight: 600;
+      margin-top: 10px;
+      color: #1e90ff;
+    }
+
+    .btn {
+      margin-top: 15px;
+      display: inline-block;
+      background: #1e90ff;
+      color: white;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #0b74d9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      background: rgba(0, 0, 0, 0.85);
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">✈ TOURLY</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="destination-select.html">DESTINATION</a></li>
+        <li><a href="packages.html">PACKAGES</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Popular Travel Packages</h1>
+    <div class="packages">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Paris">
+        <div class="card-content">
+          <h3>Paris, France</h3>
+          <p>5 Days, 4 Nights stay with guided tours to Eiffel Tower, Louvre, and more.</p>
+          <div class="price">From $1,200</div>
+          <a href="submit.html" class="btn">Book Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad" alt="Tokyo">
+        <div class="card-content">
+          <h3>Tokyo, Japan</h3>
+          <p>6 Days cultural exploration with cherry blossoms, temples, and tech wonders.</p>
+          <div class="price">From $1,500</div>
+          <a href="submit.html" class="btn">Book Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1" alt="New York">
+        <div class="card-content">
+          <h3>New York, USA</h3>
+          <p>4 Days city tour with Statue of Liberty, Times Square, and Central Park visits.</p>
+          <div class="price">From $1,100</div>
+          <a href="submit.html" class="btn">Book Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1518684079-6f5bcbd4f580" alt="Dubai">
+        <div class="card-content">
+          <h3>Dubai, UAE</h3>
+          <p>Luxury 5-day package with desert safari, Burj Khalifa, and shopping extravaganza.</p>
+          <div class="price">From $1,400</div>
+          <a href="submit.html" class="btn">Book Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Sydney">
+        <div class="card-content">
+          <h3>Sydney, Australia</h3>
+          <p>7 Days package with beach days, Harbour Bridge, and local markets.</p>
+          <div class="price">From $1,800</div>
+          <a href="submit.html" class="btn">Book Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1504457046785-444d6d2a0ae0" alt="Rome">
+        <div class="card-content">
+          <h3>Rome, Italy</h3>
+          <p>Explore ancient ruins, Vatican City, and authentic Italian cuisine over 6 days.</p>
+          <div class="price">From $1,350</div>
+          <a href="submit.html" class="btn">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Tourly. All rights reserved.
+  </footer>
+
+</body>
+</html>
